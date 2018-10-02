@@ -1,0 +1,4 @@
+NOAA
+
+Fetch all stations in South Dakota:
+curl -v -H "token: gWhIPKOZORzepPsoiQIniNgEOTXXpipM" https://www.ncdc.noaa.gov/cdo-web/api/v2/stations?locationid=FIPS:46
