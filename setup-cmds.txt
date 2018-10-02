@@ -1,7 +1,7 @@
 # Create project and app
 django-admin startproject wapi .
 cd wapi
-django-admin startapp ingest
+python3 ../manage.py startapp ingest
 
 # Modify initial settings
 vim wapi/settings.py
@@ -14,3 +14,6 @@ sudo iptables -A INPUT -p tcp --dport 8000 -j ACCEPT
 
 # Create superuser account
 python manage.py createsuperuser --email j_livermont@yahoo.com --username jlivermo
+
+# Create model
+vim wapi/ingest/models.py
