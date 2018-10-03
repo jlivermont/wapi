@@ -1,5 +1,1 @@
-Django==2.1.2
-django-environ==0.4.5
-django-kronos==1.0
-djangorestframework==3.8.2
-requests==2.19.1
+-r requirements/prod.txt
