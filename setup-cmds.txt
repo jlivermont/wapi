@@ -1,7 +1,13 @@
+# Setup virtualenv
+virtualenv .virtualenv && source .virtualenv/bin/activate && pip3 install -r requirements.txt
+
 # Create project and app
 django-admin startproject wapi .
 cd wapi
 python3 ../manage.py startapp ingest
+
+# Collect static assets
+python3 manage.py collectstatic
 
 # Modify initial settings
 vim wapi/settings.py
