@@ -15,8 +15,9 @@ vim wapi/settings.py
 # Create initial migrations
 python3 manage.py migrate
 
-# Firewall command to open up port 8000
+# Firewall command to open up ports 8000 (django web server) & 6419 (grip)
 sudo iptables -A INPUT -p tcp --dport 8000 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 6419 -j ACCEPT
 
 # Create superuser account
 python manage.py createsuperuser --email j_livermont@yahoo.com --username jlivermo
